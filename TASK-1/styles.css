@@ -1,14 +1,14 @@
 /* Header section */
 
-body{
-   font-family: 'Uchen', serif;;
+body {
+  font-family: "Uchen", serif;
 }
-a{
-  color:#fff;
+a {
+  color: #fff;
 }
-.big-heading{
-  font-family: 'Vollkorn', serif;
-  font-weight: 900 ;
+.big-heading {
+  font-family: "Vollkorn", serif;
+  font-weight: 900;
   line-height: 1.3;
   width: 60%;
 }
@@ -23,55 +23,144 @@ a{
   background-color: grey;
 }
 
-.col-10{
-  padding:10% 17% 0 17%;
-  color:#fff;
- 
+.col-10 {
+  padding: 10% 17% 0 17%;
+  color: #fff;
 }
 .carousel-indicators {
   left: -63vw;
-  margin:0;
+  margin: 0;
   margin-bottom: 4rem;
 }
 .d-block {
   height: 600px;
 }
 
-.header-carousel{
-  position:absolute;
+.header-carousel {
+  position: absolute;
 }
 
-.nabar-brand{
+.nabar-brand {
   font-size: 3rem;
   font-weight: bolder;
-  color:white;
-}
- 
-
-.navbar{
-   position: absolute;
-   width:100%;
-   background: transparent;
-   padding:2% 17% 0 17%;
-   
+  color: white;
 }
 
-.nav-link{
-  color:white;
+.navbar {
+  position: absolute;
+  width: 100%;
+  background: transparent;
+  padding: 2% 17% 0 17%;
 }
-#projects{
-  padding:50px 0 50px 0;
+
+.nav-link {
+  color: white;
+}
+#projects {
+  padding: 50px 0 50px 0;
 }
 
 @media only screen and (max-width: 987px) {
-
-    .navbar{
-        background-color: #fff;
-        z-index:10;
-    }
+  .navbar {
+    background-color: #fff;
+    z-index: 10;
+  }
+}
+#team {
+  padding: 25px 20% 30px 20%;
+}
+#video-projects {
+  padding: 25px 0 25px 0;
+  background-color: gold;
 }
 
-.welcome-section{
-  padding:350px 17% 200px 17%;
+.welcome-section {
+  padding: 350px 17% 200px 17%;
   background-color: grey;
+}
+
+/* our team */
+
+#team {
+  background-color: #f32248;
+}
+.our-team {
+  text-align: center;
+  position: relative;
+  color: #fff;
+}
+.our-team img {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+}
+.our-team .content {
+  background: rgba(0, 0, 0, 0.6);
+  position: absolute;
+  height: 200px;
+  border-radius: 50%;
+  width: 200px;
+  left: 2.3rem;
+  /* right:1px; */
+  top: 0;
+  text-align: center;
+  padding-top: 45%;
+  transform: perspective(400px) rotateX(-90deg);
+  transform-origin: center top 0;
+  transition: all 0.5s ease 0s;
+  opacity: 0;
+}
+.our-team:hover .content,
+.our-team.active .content {
+  opacity: 1;
+  transform: perspective(400px) rotateX(0deg);
+}
+.our-team .content .title {
+  margin: 0 0 10px;
+  display: block;
+  font-size: 25px;
+  font-weight: 600;
+}
+.our-team .content .post {
+  margin: 0 0 25px;
+  display: block;
+  font-size: 15px;
+}
+.our-team .social {
+  margin-top: 30px;
+  padding: 0;
+  list-style-type: none;
+}
+.our-team .social li {
+  display: inline-block;
+}
+.our-team .social li a {
+  display: block;
+  color: #fff;
+  font-size: 20px;
+  height: 40px;
+  width: 40px;
+  line-height: 40px;
+  border-radius: 0;
+  background-color: #f32248;
+  margin-right: 5px;
+  transition: all 0.5s ease 0s;
+  position: relative;
+  bottom: 70px;
+}
+.our-team .social li a:hover,
+.our-team.active .social li a {
+  border-radius: 50%;
+  text-decoration: none;
+}
+@media screen and (max-width: 990px) {
+  .our-team {
+    margin-bottom: 30px;
+  }
+}
+
+/* life at zippy */
+#life{
+  padding:30px 20% 20px 20%;
+  background-color: gold;
 }
