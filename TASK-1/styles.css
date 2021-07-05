@@ -6,32 +6,18 @@
   height: 150rem;
 }
 
-.header-images {
-  position: absolute;
-}
-.header-conent {
-  position: absolute;
+.d-block {
+  height: 600px;
 }
 
 .carousel-indicators li {
-  display: inline-block;
-  width: 48px;
-  height: 48px;
-  margin: 10px;
-
+  width: 15px;
+  height: 15px;
   border-radius: 50%;
   background-color: grey;
 }
 .carousel-indicators {
-  top: 134rem;
-  right: 170rem;
-  /* margin-top: 0%; */
-  margin-left: 0%;
-}
-
-.carousel-indicators .active {
-  width: 48px;
-  height: 48px;
-  margin: 10px;
-  background-color: white;
+  left: -70vw;
+  margin:0;
+  margin-bottom: 4rem;
 }
