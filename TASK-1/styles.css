@@ -176,11 +176,18 @@ h2{
 }
 
 
-/* our team */
+/* OUR TEAM*/
 
 #team {
-  background-color: #f32248;
+  background-color: #fff;
 }
+
+.visitors{
+  color:#fd5e53;
+ margin-top: 1rem;
+ 
+}
+
 .our-team {
   text-align: center;
   position: relative;
@@ -235,6 +242,7 @@ h2{
   width: 200px;
   height: 250px;
   overflow: hidden;
+  margin-bottom:1rem;
 }
 .our-team .social li a {
   display: block;
@@ -242,6 +250,7 @@ h2{
   font-size: 20px;
   height: 40px;
   width: 40px;
+  text-align: center;
   line-height: 40px;
   border-radius: 0;
   background-color: #f32248;
