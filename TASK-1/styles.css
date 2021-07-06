@@ -113,6 +113,8 @@ h1{
 .features{
   margin-top:3rem;
 }
+
+
 /* Project */
 #projects {
   background-color:  #fd5e53 ;
@@ -131,12 +133,17 @@ h1{
 #team {
   padding: 25px 20% 30px 20%;
 }
+
+
 /* video projects */
 #video-projects {
   padding: 25px 0 25px 0;
-  background-color: gold;
+  background-color: #fd5e53 
 }
-
+.video-title{
+  color:white;
+  margin-bottom: 4px !important;
+}
 .wrapper{
   width:100%;
   padding-top: 20px;
@@ -163,10 +170,10 @@ h2{
   color:white;
   display: none;
 }
-/* .slick-prev ,.slick-next{
-    display: none !important;
-} */
-
+/* PRICING SECTION */
+#pricing{
+  background-color: white !important;
+}
 
 
 /* our team */
