@@ -3,9 +3,7 @@
 body {
   font-family: "Uchen", serif;
 }
-a {
-  color: #fff;
-}
+
 .big-heading {
   font-family: "Vollkorn", serif;
   font-weight: 900;
@@ -40,10 +38,10 @@ a {
   position: absolute;
 }
 
-.nabar-brand {
-  font-size: 3rem;
+.navbar-brand {
+  font-size: 3rem ;
   font-weight: bolder;
-  color: white;
+  color: white !important;
 }
 
 .navbar {
@@ -69,10 +67,41 @@ a {
 #team {
   padding: 25px 20% 30px 20%;
 }
+/* video projects */
 #video-projects {
   padding: 25px 0 25px 0;
   background-color: gold;
 }
+
+.wrapper{
+  width:100%;
+  padding-top: 20px;
+  text-align:center;
+}
+h2{
+  font-family:sans-serif;
+  color:#fff;
+}
+.carousell{
+    padding: 5% 10%;
+  margin:0px auto;
+  width: 100%;
+}
+.slick-slide{
+  margin:20px;
+}
+.slick-slide video{
+  border: 2px solid #fff;
+  width: 100%;
+}
+.wrapper .slick-dots li button:before {
+  font-size:20px;
+  color:white;
+  display: none;
+}
+/* .slick-prev ,.slick-next{
+    display: none !important;
+} */
 
 .welcome-section {
   padding: 350px 17% 200px 17%;
@@ -100,7 +129,7 @@ a {
   height: 200px;
   border-radius: 50%;
   width: 200px;
-  left: 2.3rem;
+  left: 0;
   /* right:1px; */
   top: 0;
   text-align: center;
@@ -134,6 +163,11 @@ a {
 .our-team .social li {
   display: inline-block;
 }
+.our-team .pic {
+  width: 200px;
+  height: 250px;
+  overflow: hidden;
+}
 .our-team .social li a {
   display: block;
   color: #fff;
@@ -161,99 +195,54 @@ a {
 
 /* life at zippy */
 #life {
-  padding: 30px 0 20px 0;
+  padding: 40px 10% 20px 10%;
   background-color: gold;
 }
 
-#thumbnail-preview-indicators {
-  /* top:30px; */
-  /* bottom:500px; */
+
+.sld-wrp {
+  /* width: 800px; */
+  margin: 0 auto;
+}
+
+.slider-for {
+  /* width: 800px; */
+  /* height:200px; */
+  margin: 0 auto;
   position: relative;
-  overflow: hidden;
-}
-#thumbnail-preview-indicators .slides .slide-1,
-#thumbnail-preview-indicators .slides .slide-2,
-#thumbnail-preview-indicators .slides .slide-3 {
-  background-size: cover;
-  background-position: center center;
-  background-repeat: no-repeat;
-}
-#thumbnail-preview-indicators,
-#thumbnail-preview-indicators .slides,
-#thumbnail-preview-indicators .slides .slide-1,
-#thumbnail-preview-indicators .slides .slide-2,
-#thumbnail-preview-indicators .slides .slide-3 {
-  height:600px;
-}
-#thumbnail-preview-indicators .slides .slide-1 {
-  background-image: url(Images/image3.jpg);
-}
-#thumbnail-preview-indicators .slides .slide-2 {
-  background-image: url(Images/image2.jpg);
-}
-#thumbnail-preview-indicators .slides .slide-3 {
-  background-image: url(Images/image1.jpg);
-}
-#thumbnail-preview-indicators .carousel-inner .item  {
-  top: 20%;
-  bottom: inherit;
+  z-index: 10;
 }
 
-/* CAROUSEL INDICATORS */
-#thumbnail-preview-indicators .carousel-indicators li,
-#thumbnail-preview-indicators .carousel-indicators li.active {
-  width: 152px;
-  height: auto;
-  max-height: 102px;
-
-  background-color: transparent;
-  border: 1px solid white;
-  border-radius: 1px;
-}
-#thumbnail-preview-indicators .carousel-indicators li.active {
-  border: 1px solid blue;
-}
-#thumbnail-preview-indicators .carousel-indicators li > .thumbnail {
-  width: 150px;
-  height: auto;
-  max-height: 100px;
-  overflow: hidden;
-
-  opacity: 0.8;
-  display: block;
-  padding: 0;
-  margin-bottom: 0;
+.slide-container {
+  height: 40vh;
   background-color: #fff;
-  border: none;
-  border-radius: 2px;
-  transition: all 550ms ease-out;
-}
-#thumbnail-preview-indicators .carousel-indicators li:hover > .thumbnail,
-#thumbnail-preview-indicators
-  .carousel-indicators
-  li.active
-  > .thumbnail:hover {
-  position: relative;
-  display: block;
-  border: 1px solid white;
-  opacity: 1;
-  transform: scale(1.2);
-  z-index: 1;
-}
-#thumbnail-preview-indicators
-  .carousel-indicators
-  li.active
-  > .thumbnail:hover {
-  border: 1px solid red;
+  text-align: center;
+  line-height: 40vh;
+  font-size: 40px;
+  font-weight: bold;
+  border: 1px solid #000;
+  margin-bottom: 20px;
+  box-sizing: border-box;
 }
 
-@media screen and (min-width: 480px) {
+.slide-btn {
+  text-align: center;
+  box-sizing: border-box;
+  padding: 20px;
+  background-color: yellow;
+  border: 1px solid #000;
+  cursor: pointer;
 }
-@media screen and (min-width: 768px) {
+
+.slide-btn:hover {
+  background-color: rgb(255, 179, 0);
+ 
 }
-@media screen and (min-width: 1024px) {
-}
-@media screen and (min-width: 1200px) {
-}
-@media screen and (min-width: 1440px) {
+
+.slick-prev{
+  border: 1px solid #000;
+  padding:33px 3px 0 1px;
+  background-color: red;
+  margin:0;
+
 }

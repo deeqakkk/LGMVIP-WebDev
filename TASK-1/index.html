@@ -27,11 +27,11 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Uchen&family=Vollkorn:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
         rel="stylesheet">
-
-
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.css">
     <link rel="icon" href="Images/favicon/favicon.ico">
     <link rel="stylesheet" href="styles.css">
-  
+
 </head>
 
 <body>
@@ -273,6 +273,36 @@
     </section>
     <section id="video-projects">
         <h1>Video Projects</h1>
+        <div class="wrapper">
+            <h2>Slick Carousel Example<h2>
+                <div class="carousell">
+                  <div>
+                    <video id='video' controls="controls" preload='none'  poster="http://media.w3.org/2010/05/sintel/poster.png">
+                        <source id='mp4' src="http://media.w3.org/2010/05/sintel/trailer.mp4" type='video/mp4' />
+                                    <h5 style="float: left;">lore34</h5></div>
+                  <div>
+                    <video id='video' controls="controls" preload='none'  poster="http://media.w3.org/2010/05/sintel/poster.png">
+                        <source id='mp4' src="http://media.w3.org/2010/05/sintel/trailer.mp4" type='video/mp4' />
+                      <h6 style="float: left;">lore34</h6></div>
+                  <div>
+                    <video id='video' controls="controls" preload='none'  poster="http://media.w3.org/2010/05/sintel/poster.png">
+                        <source id='mp4' src="http://media.w3.org/2010/05/sintel/trailer.mp4" type='video/mp4' />
+                    <h6 style="float: left;">lore34</h6></div>
+                  <div>
+                    <video id='video' controls="controls" preload='none'  poster="http://media.w3.org/2010/05/sintel/poster.png">
+                        <source id='mp4' src="http://media.w3.org/2010/05/sintel/trailer.mp4" type='video/mp4' />
+                    <h6 style="float: left;">lore34</h6></div>
+                  <div>
+                    <video id='video' controls="controls" preload='none'  poster="http://media.w3.org/2010/05/sintel/poster.png">
+                        <source id='mp4' src="http://media.w3.org/2010/05/sintel/trailer.mp4" type='video/mp4' />
+                    <h6 style="float: left;">lore34</h6></div>
+                  <div>
+                    <video id='video' controls="controls" preload='none'  poster="http://media.w3.org/2010/05/sintel/poster.png">
+                        <source id='mp4' src="http://media.w3.org/2010/05/sintel/trailer.mp4" type='video/mp4' />
+                    <h6 style="float: left;">lore34</h6></div>
+                </div>
+          </div>
+    
     </section>
 
 
@@ -398,57 +428,32 @@
     </section>
     <div id="life">
         <h1>Life at Zippy</h1>
-       
-            <div id="thumbnail-preview-indicators" class="carousel slide" data-ride="carousel">
-                <!-- Indicators -->
-                <ol class="carousel-indicators">
-                    <li data-target="#thumbnail-preview-indicators" data-slide-to="0" class="active">
-                        <div class="thumbnail">
-                            <img class="img-responsive"
-                                src="Images/image3.jpg">
-                        </div>
-                    </li>
-                    <li data-target="#thumbnail-preview-indicators" data-slide-to="1">
-                        <div class="thumbnail">
-                            <img class="img-responsive"
-                                src="Images/image2.jpg">
-                        </div>
-                    </li>
-                    <li data-target="#thumbnail-preview-indicators" data-slide-to="2">
-                        <div class="thumbnail">
-                            <img class="img-responsive"
-                                src="Images/image1.jpg">
-                        </div>
-                    </li>
-                </ol>
-                <div class="carousel-inner">
-                    <div class="item slides active">
-                        <div class="slide-1"></div>
-                        <div class="container">
-                            
-                        </div>
-                    </div>
-                    <div class="item slides">
-                        <div class="slide-2"></div>
-                        <div class="container">
-                           
-                        </div>
-                    </div>
-                    <div class="item slides">
-                        <div class="slide-3"></div>
-                        <div class="container">
-                            
-                        </div>
-                    </div>
-                </div>
-                <a class="left carousel-control" href="#thumbnail-preview-indicators" role="button"
-                    data-slide="prev"><span class="glyphicon glyphicon-chevron-left"></span></a>
-                <a class="right carousel-control" href="#thumbnail-preview-indicators" role="button"
-                    data-slide="next"><span class="glyphicon glyphicon-chevron-right"></span></a>
-            </div>
-        </div>
-    
+        <div class="sld-wrp">
 
+            <div class="slider-for">
+              <div class="slide-container">go 1</div>
+              <div class="slide-container">go 2</div>
+              <div class="slide-container">go 3</div>
+              <div class="slide-container">go 4</div>
+              <div class="slide-container">go 5</div>
+              <div class="slide-container">go 6</div>
+            </div>
+            <div class="slider-nav">
+              <div class="slide-btn">go 1</div>
+              <div class="slide-btn">go 2</div>
+              <div class="slide-btn">go 3</div>
+              <div class="slide-btn">go 4</div>
+              <div class="slide-btn">go 5</div>
+              <div class="slide-btn">go 6</div>
+            </div>
+        
+          </div>
+        
+    </div>
+
+       
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
     <script src="index.js"></script>
 </body>
 
