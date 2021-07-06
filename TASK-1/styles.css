@@ -1,40 +1,39 @@
 body {
   font-family: "Uchen", serif;
-  margin-right:0 !important;
+  margin-right: 0 !important;
 }
 
-.img-icon{
+.img-icon {
   width: 200px;
   height: 200px;
-  margin-bottom:2rem;
+  margin-bottom: 2rem;
 }
-.btn-hover:hover{
+.btn-hover:hover {
   background-color: #cc1f3e;
-  color:white;
+  color: white;
 }
-h1{
+h1 {
   font-family: "Vollkorn", serif;
-  font-size:4rem;
+  font-size: 4rem;
   font-style: bolder;
   text-align: center;
   margin-bottom: 4rem;
-  color:#f32248;
+  color: #f32248;
 }
 
 .container-fluid {
   padding: 0;
 }
 
-.card-title{
+.card-title {
   font-family: "Uchen", serif;
-    font-weight: bolder;
-    color:#cc1f3e;
+  font-weight: bolder;
+  color: #cc1f3e;
 }
-
 
 /* Header section */
 .navbar-brand {
-  font-size: 3.5rem ;
+  font-size: 3.5rem;
   font-weight: bolder;
   color: white !important;
 }
@@ -43,22 +42,20 @@ h1{
   color: white !important;
 }
 
-
 .big-heading {
   font-family: "Vollkorn", serif;
-  font-size:4rem;
+  font-size: 4rem;
   line-height: 1;
   width: 80%;
-  color:rgb(245, 201, 4);
+  color: rgb(245, 201, 4);
   font-style: bold;
   text-align: left;
   margin-bottom: 2px !important;
 }
 
-.header-para{
+.header-para {
   font-size: larger;
 }
-
 
 .carousel-indicators li {
   width: 12px;
@@ -84,8 +81,6 @@ h1{
   position: absolute;
 }
 
-
-
 .navbar {
   position: absolute;
   width: 100%;
@@ -99,82 +94,88 @@ h1{
   background-color: white;
 }
 
-.welcome-line{
-
+.welcome-line {
   font-size: 2rem;
-  color:rgb(245, 31, 181);
-  font-family: 'Satisfy', cursive;
+  color: rgb(245, 31, 181);
+  font-family: "Satisfy", cursive;
 }
 
-.welcome-img{
+.welcome-img {
   text-align: right;
 }
 
-.features{
-  margin-top:3rem;
+.features {
+  margin-top: 3rem;
 }
-
 
 /* Project */
 #projects {
-  background-color:  #fd5e53 ;
+  background-color: #fd5e53;
   padding: 50px 17% 50px 17%;
 }
-.project-title{
-  color:white;
+.project-title {
+  color: white;
 }
 
 @media only screen and (max-width: 987px) {
   .navbar {
     background-color: #fff;
     z-index: 10;
+    color:black ;
+  }
+  .big-heading{
+  
+    margin-top:4.3rem;
+    font-size: 2rem;
+    line-height: 1.2;
+  }
+  .project-title {
+    color: black;
   }
 }
 #team {
   padding: 25px 20% 30px 20%;
 }
 
-
 /* video projects */
 #video-projects {
   padding: 25px 0 25px 0;
-  background-color: #fd5e53 
+  background-color: #fd5e53;
 }
-.video-title{
-  color:white;
+.video-title {
+  color: white;
   margin-bottom: 4px !important;
 }
-.wrapper{
-  width:100%;
+.wrapper {
+  width: 100%;
   padding-top: 20px;
-  text-align:center;
+  text-align: center;
 }
-h2{
-  font-family:sans-serif;
-  color:#fff;
+h2 {
+  font-family: sans-serif;
+  color: #fff;
 }
-.carousell{
-    padding: 5% 10%;
-  margin:0px auto;
+.carousell {
+  padding: 5% 10%;
+  margin: 0px auto;
   width: 100%;
 }
-.slick-slide{
-  margin:20px;
+.slick-slide {
+  margin: 20px;
 }
-.slick-slide video{
+.slick-slide video {
   border: 2px solid #fff;
   width: 100%;
 }
 .wrapper .slick-dots li button:before {
-  font-size:20px;
-  color:white;
+  font-size: 20px;
+  color: white;
   display: none;
 }
 /* PRICING SECTION */
-#pricing{
+#pricing {
   background-color: white !important;
 }
-
 
 /* OUR TEAM*/
 
@@ -182,10 +183,9 @@ h2{
   background-color: #fff;
 }
 
-.visitors{
-  color:#fd5e53;
- margin-top: 1rem;
- 
+.visitors {
+  color: #fd5e53;
+  margin-top: 1rem;
 }
 
 .our-team {
@@ -242,7 +242,7 @@ h2{
   width: 200px;
   height: 250px;
   overflow: hidden;
-  margin-bottom:1rem;
+  margin-bottom: 1rem;
 }
 .our-team .social li a {
   display: block;
@@ -270,12 +270,11 @@ h2{
   }
 }
 
-/* life at zippy */
+/* EXPERIENCES AT VAATIKA */
 #life {
   padding: 40px 10% 20px 10%;
-  background-color: gold;
+  background-color: #f32248;
 }
-
 
 .sld-wrp {
   /* width: 800px; */
@@ -291,7 +290,7 @@ h2{
 }
 
 .slide-container {
-  height: 40vh;
+  height: 60vh;
   background-color: #fff;
   text-align: center;
   line-height: 40vh;
@@ -305,57 +304,74 @@ h2{
 .slide-btn {
   text-align: center;
   box-sizing: border-box;
-  padding: 20px;
-  background-color: yellow;
-  border: 1px solid #000;
+  /* padding: 20px; */
+
+  border: 1px solid #fff;
   cursor: pointer;
+  height: 100px;
+  display: inline-block;
+  width: 150px;
 }
 
 .slide-btn:hover {
-  background-color: rgb(255, 179, 0);
- 
+  transform: scale(1.2);
+  transition-duration: 1s;
 }
 
-.slick-prev{
-  border: 1px solid #000;
-  padding:33px 3px 0 1px;
-  background-color: red;
-  margin:0;
+.slick-prev {
+  border: 1px solid #fff;
+  padding: 3.1rem 1.3rem 3.1rem 0.1rem;
+  background-color: grey;
+  margin: 0;
+}
 
+.slick-next {
+  border: 1px solid #fff;
+  padding: 3.1rem 1.3rem 3.1rem 0.1rem;
+  background-color: grey;
+  margin: 0;
 }
 
 /* Sign Up Section */
-#sign-up{
-  background-image: url('Images/sign.jpg');
-  height:400px;
-  
+#sign-up {
+  padding: 40px 10% 20px 10%;
+  background-image: url("images/sign.jpg");
   background-repeat: no-repeat;
-  
+  height: 300px;
+}
+.sign-title {
+  color: white;
+}
+
+hr{
+  color:#cc1f3e;
+  height:3rem !important;
 }
 
 /* Blogs */
-#blog{
- 
-  padding: 2% 17% 0 17%;
+#blogs {
+  padding: 40px 10% 20px 10%;
 }
 
 /* Contact*/
-#Contact{
+#Contact {
   padding: 2% 0 25px 0;
 }
+.form-text {
+  color: white !important;
+}
+form {
+  color: white;
+}
 
-.map{
-  height:100%;
+.map {
+  height: 100%;
   width: 100%;
 }
-form{
-  /* background-color: yellowgreen; */
-  
-}
 
-.contact-form{
-  background: yellow;
-  padding:2% 10% ;
+.contact-form {
+  background: #cc1f3e;
+  padding: 2% 10%;
 }
 
 /* footer section */
@@ -379,7 +395,7 @@ li{
 	text-align: justify;
 }
 .footer{
-	background-color: #02091a;
+	background-color: #cc1f3e;
     padding: 70px 0;
 }
 .footer-col{
@@ -394,15 +410,15 @@ li{
 	font-weight: 500;
 	position: relative;
 } 
-.footer-col ul li:not(:last-child){
+/* .footer-col ul li:not(:last-child){
 	margin-bottom: 10px;
-}
+} */
 .footer-col ul li a{
 	font-size: 16px;
 	text-transform: capitalize;
 	color: #ffffff;
 	text-decoration: none;
-	font-weight: 100;
+	font-weight: 300;
 	color: #bbbbbb;
 	display: block;
 	transition: all 0.3s ease;
@@ -439,7 +455,6 @@ li{
     width: 100%;
 }
 }
-
 
 
 
