@@ -42,6 +42,11 @@ h1 {
   color: white !important;
 }
 
+.nav-link:hover{
+  color:#cc1f3e !important;
+ cursor: hands;
+}
+
 .big-heading {
   font-family: "Vollkorn", serif;
   font-size: 4rem;
@@ -368,6 +373,13 @@ hr{
 }
 form {
   color: white;
+}
+
+
+
+.input-group{
+ margin-left:16rem !important;
+
 }
 
 .map {
