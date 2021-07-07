@@ -119,7 +119,7 @@ h1 {
 
 @media only screen and (max-width: 987px) {
   .navbar {
-    background-color: #fff;
+    background-color: #fd5e53;
     z-index: 10;
     color:black ;
   }
@@ -132,6 +132,12 @@ h1 {
   .project-title {
     color: black;
   }
+
+  .btn-header{
+    margin-bottom: 1rem;
+  }
+
+  
 }
 #team {
   padding: 25px 20% 30px 20%;
@@ -414,10 +420,11 @@ li{
 	margin-bottom: 10px;
 } */
 .footer-col ul li a{
-	font-size: 16px;
+	font-size: 20px;
 	text-transform: capitalize;
 	color: #ffffff;
 	text-decoration: none;
+
 	font-weight: 300;
 	color: #bbbbbb;
 	display: block;
@@ -433,7 +440,7 @@ li{
 	width: 40px;
 	background-color: rgba(255,255,255,0.2);
 	margin:0 10px 10px 0;
-	text-align: center;
+	text-align: center !important;
 	line-height: 40px;
 	border-radius: 50%;
 	color: #ffffff;
