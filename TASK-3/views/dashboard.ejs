@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+  <!-- JavaScript Bundle with Popper -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous">
+  </script>
+  <!-- CSS only -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body style="background-color: #B980F0;">
+  <div class="container">
+    <h2 class="welcome">XYZ Public School</h2>
+    <h4>Academic Session 2020-2021</h4>
+
+
+    <br><br>
+
+    <ul class="nav nav-pills ml-auto mr-auto" role="tablist">
+      <li class="nav-item">
+        <button class="nav-link active enter" data-toggle="pill" href="#add">Create Record</button>
+      </li>
+      <li class="nav-item">
+        <button class="nav-link enter" data-toggle="pill" href="#update">Update Record</button>
+      </li>
+      <li class="nav-item">
+        <button class="nav-link enter" data-toggle="pill" href="#view">View Record</button>
+      </li>
+      <li class="nav-item">
+        <button class="nav-link enter" data-toggle="pill" href="#delete">Delete Record</button>
+      </li>
+      <li class="nav-item">
+        <button class="nav-link enter"><a href="/logout">Log Out</a></button>
+      </li>
+    </ul>
+    <br><br>
+  </div>
+  <div class="tab-content">
+    <div id="add" class="container tab-pane fa in active"><br>
+      <h3 class="sub-heading">Student's Details</h3>
+      <div class="hr" style="margin-left: 0%"></div><br>
+
+      <form action="/dashboard" method="POST" autocomplete="off">
+        <div class="std-details">
+          <tr>
+            <td><input class="input-box" type="text" name="name" placeholder="Student's Name"></td>
+            <td><input class="input-box" type="text" name="class" placeholder="Enter Class"></td>
+          </tr>
+
+          <br>
+          <tr>
+            <td><input class="input-box" type="text" name="rollNo" placeholder="Roll Number"></td>
+            <td><input class="input-box" type="text" name="fatherName" placeholder="Father's Name"></td>
+          </tr>
+          <br>
+          <tr>
+            <td><input class="input-box" type="text" name="mobileNo" placeholder="Contact Number"></td>
+            <td><input class="input-box" type="date" name="dob" placeholder="Date Of Birth"></td>
+
+          </tr>
+        </div>
+
+        <br>
+        <h3 class="sub-heading">Marks Obtained</h3>
+        <div class="std-details">
+
+          <tr>
+
+            <td><input class="input-box" type="number" name="maths" placeholder="Mathematics"></td>
+            <td><input class="input-box" type="number" name="chem" placeholder=" Chemistry  "></td>
+          </tr>
+          <br>
+          <tr>
+            <td><input class="input-box" type="number" name="eng" placeholder="English"></td>
+            <td><input class="input-box" type="number" name="phy" placeholder="Physics"></td>
+          </tr>
+          <br>
+          <tr>
+            <td><input class="input-box" type="number" name="hindi" placeholder="Hindi"></td>
+            <td colspan="2"><button class="button button2 btn btn-danger" type="submit" name="Submit"
+                style="width: 240px;padding: 0.8rem;vertical-align:middle;">
+                Create Record
+              </button></td>
+          </tr>
+          <tr><br><br><br>
+        </div>
+        <br><br>
+        </tr>
+      </form>
+    </div>
+    <div id="update" class="container tab-pane fade"><br>
+      <h3 class="sub-heading">Update Record</h3>
+
+
+      <form action="/update" method="post" autocomplete="off"><br>
+        <br>
+
+        <input class="input-box" type="VALUE" name="rollno" placeholder="ENTER ROLL NUMBER"
+          style="margin-left: 3rem;position: relative;bottom: 2.2rem;"><br><br>
+        <button class="button btn btn-danger button2" type="submit" name="Submit"
+          style="margin-left: 3rem;position: relative;bottom: 2.2rem;width:200px">
+          <span>Open Record </span>
+      </form>
+    </div>
+    <div id="view" class="container tab-pane fade"><br>
+      <h3 class="sub-heading">Records Fetched</h3>
+
+      <br><br><br>
+      <div class="container">
+        <table class="table" style="background-color: #777777; border-collapse: collapse;padding-bottom: 4rem;">
+          <thead>
+            <tr>
+              <th style="color:white;">Name</th>
+              <th style="color:white;">Class</th>
+              <th style="color:white;">Roll No</th>
+              <th style="color:white;">See Details</th>
+
+            </tr>
+          </thead>
+          <tbody>
+            <%  students.forEach(function(student){ %>
+            <tr>
+              <td><%=student.name %></td>
+
+              <td><%= student.class %></td>
+              <td><%= student.rollNo %></td>
+              <td style="text-align: center; "><a style="color:white;" href="/profile/<%=student._id %>">View More</a>
+              </td>
+            </tr>
+
+            <%  }) %>
+          </tbody>
+        </table>
+      </div>
+
+    </div>
+    <div id="delete" class="container tab-pane fade"><br>
+      <form action="/delete" method="post"><br>
+        <h3 class="sub-heading">Delete Record</h3>
+        <div style="margin-left: 0%;"></div>
+        </h3>
+
+
+        <input class="input-box" style=" margin-left: 20rem;" type="VALUE" name="rollno"
+          placeholder=" Enter Roll Number"><br>
+        <button class="button button2 btn btn-danger btn-g" style="
+        width: auto;
+        margin-left: 20rem;
+        margin-bottom: 3rem;
+    " type="submit" name="Submit">
+          <span>Delete Record</span>
+        </button>
+      </form>
+    </div>
+  </div>
+  </div>
+
+  </div>
+
+
+</body>

@@ -1,0 +1,44 @@
+<%- include('partials/navbar') %> 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .failure h1 {
+  color: rgb(233, 83, 83);
+  font-family: "Nunito Sans", "Helvetica Neue", sans-serif;
+  font-weight: 900;
+  font-size: 40px;
+  margin-bottom: 10px;
+}
+.failure p {
+  color: #404f5e;
+  font-family: "Nunito Sans", "Helvetica Neue", sans-serif;
+  font-size: 20px;
+  margin: 0;
+}
+.failure i {
+  color: rgb(233, 83, 83);
+  font-size: 100px;
+  line-height: 200px;
+  margin-left: -15px;
+}
+
+</style>
+<body>
+    <br><br>
+    <div class="text-center">
+    <div class="card failure">
+        <div style="border-radius:200px; height:200px; width:200px; background: #F8FAF5; margin:0 auto;">
+          <i class="checkmark">x</i>
+        </div>
+          <h1>Error</h1> 
+          <p>Something's wrong<br/> 
+            <a href="/secrets" type="button" class="btn btn-danger">Go back</a>
+        </p>
+        </div>
+    </div>
+</body>

@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+
+
+  <link rel="stylesheet" href="css/styles.css">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+
+
+  <style>
+    body {
+      background-color: #B5CDA3;
+    }
+
+    .success h1 {
+      color: #984bb0;
+      font-weight: 900;
+      font-size: 40px;
+      margin-bottom: 10px;
+      font-family: "Asul", sans-serif;
+    }
+
+    .success p {
+      color: #404f5e;
+      font-size: 20px;
+      margin: 0;
+      font-family: "Asul", sans-serif;
+    }
+
+    .success i {
+      color: #9926bd;
+      font-size: 100px;
+      line-height: 200px;
+      margin-left: -15px;
+    }
+
+    .card {
+      background: white;
+      padding: 60px;
+      border-radius: 4px;
+      box-shadow: 0 2px 3px #c8d0d8;
+      display: inline-block;
+      margin: 0 auto;
+    }
+  </style>
+</head>
+
+<body>
+  <br><br><br>
+  <div class="text-center">
+    <div class="card success">
+      <div style="
+            border-radius: 200px;
+            height: 200px;
+            width: 200px;
+            background: #b8d48e;
+            margin: 0 auto;
+          ">
+        <i class="checkmark">✓</i>
+      </div>
+      <h1>Record Updated</h1>
+      <p>
+        <%= text %><br />
+        <a href="/dashboard" type="button" class="btn btn-danger btn-lg btn-block">Go back</a>
+      </p>
+    </div>
+  </div>
+</body>
+
+</html>

@@ -1,0 +1,74 @@
+<%- include('partials/navbar') %>
+<style>
+  body {
+    background-image: none;
+  }
+
+  .col-5 h1 {
+    text-align: center;
+    padding-top: 18px;
+    color: #F8485E
+  }
+
+  .col {
+    border: 2px solid black;
+  }
+
+  span {
+    color: #F8485E;
+    font-size: 1.2rem;
+  }
+</style>
+<h1 style="text-align: center; font-family: 'Merriweather', serif;" class="marks">RESULT</h1>
+<br />
+<div class="container">
+  <div class="row box1">
+    <div class="col-5 col">
+      <h1><%= student[0].name %></h1>
+    </div>
+    <div class="col-7 col">
+      Roll No: <span><%=student[0].rollNo %></span><br />
+      Class: <span><%= student[0].class %></span><br />
+      Father's Name :<span><%= student[0].fatherName %></span> <br />
+    </div>
+  </div>
+</div>
+
+<div class="table-div">
+  <table class="table" style="background-color: #F8485E;">
+    <thead>
+      <tr>
+        <th>Subjects</th>
+        <th>Marks Obtained</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Maths</td>
+        <td><%=student[0].maths %></td>
+      </tr>
+      <tr>
+        <td>English</td>
+        <td><%= student[0].eng %></td>
+      </tr>
+      <tr>
+        <td>Chemistry</td>
+        <td><%=student[0].chem %></td>
+      </tr>
+      <tr>
+        <td>Hindi</td>
+        <td><%= student[0].hindi %></td>
+      </tr>
+      <tr>
+        <td>Physics</td>
+        <td><%= student[0].phy %></td>
+      </tr>
+    </tbody>
+  </table>
+  <br />
+
+
+  <button type="button" class="btn btn-danger" onclick="window.print()">
+    Save Result
+  </button>
+</div>

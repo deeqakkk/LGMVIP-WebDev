@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+
+
+  <link rel="stylesheet" href="css/styles.css">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+</head>
+<style>
+  body {
+    background-color: #FFEAC9;
+    font-family: "Merriweather", serif;
+  }
+</style>
+
+<body>
+  <nav class="navbar navbar-expand-sm  navbar-light" style="  background-color: #f8485e;
+  font-size: larger;  margin-bottom: 1.5rem; ">
+    <a class="navbar-brand" style="  color: #f1faee !important;
+    font-size: 2.8rem;
+    
+  " href="/">XYZ Public School</a>
+
+    <ul class="navbar-nav ml-auto">
+      <li class="nav-item active">
+        <a class="nav-link links" style="  color: #fff !important;
+        font-size: 1.5rem;
+      " href="/">| Home</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link links" style="  color: #fff !important;
+        font-size: 1.5rem;
+      " href="/">| Faculty</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link links" style="  color: #fff !important;
+        font-size: 1.5rem;
+      " href="/">| Student</a>
+      </li>
+
+    </ul>
+  </nav>
+
+
+  <div class="student-profile py-4">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-4">
+          <div class="card shadow-sm text-center">
+            <div class="card-header">
+              <i class="far fa-user fa-6x"></i>
+            </div>
+
+            <div class="card-body" style="text-align: center;">
+              <h3 style="color:#f8485e;">
+                <%= student[0].name %>
+              </h3>
+
+              <p class="mb-0"><strong class="pr-1">Roll No:</strong>
+                <%= student[0].rollNo %>
+              </p>
+              <p class="mb-0"><strong class="pr-1">Class:</strong>
+                <%= student[0].class %>
+              </p>
+            </div>
+          </div>
+          <br><br>
+        </div>
+        <br>
+        <div class="col-lg-8">
+          <div class="card shadow-sm">
+            <div class="card-header bg-transparent border-0">
+              <h3 class="mb-0">General Information</h3>
+            </div>
+            <div class="card-body pt-0">
+              <table class="table table-bordered">
+                <tr>
+                  <th width="30%">Father's Name</th>
+
+                  <td>
+                    <%= student[0].fatherName %>
+                  </td>
+                </tr>
+                <tr>
+                  <th width="30%">DOB</th>
+
+                  <td>
+                    <%= student[0].dob %>
+                  </td>
+                </tr>
+                <tr>
+                  <th width="30%">Contact</th>
+
+                  <td>
+                    <%= student[0].mobileNo %>
+                  </td>
+                </tr>
+              </table>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <br>
+  <br>
+  <div class="container">
+    <div class="col-lg-8" style="
+       margin-top: -4rem;
+    margin-left: -1rem;
+">
+      <div class="card shadow-sm">
+        <div class="card-header bg-transparent border-0">
+          <h3 class="mb-0">Marks Information</h3>
+        </div>
+        <div class="card-body pt-0">
+          <table class="table table-bordered">
+            <table class="table table-bordered">
+              <thead>
+                <tr>
+                  <th>Subjects</th>
+                  <th>Marks</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Maths</td>
+                  <td>
+                    <%=student[0].maths %>
+                  </td>
+                </tr>
+                <tr>
+                  <td>English</td>
+                  <td>
+                    <%= student[0].eng %>
+                  </td>
+                </tr>
+                <tr>
+                  <td>Hindi</td>
+                  <td>
+                    <%= student[0].hindi %>
+                  </td>
+                </tr>
+                <tr>
+                  <td>Physics</td>
+                  <td>
+                    <%= student[0].phy %>
+                  </td>
+                </tr>
+                <tr>
+                  <td>Chemistry</td>
+                  <td>
+                    <%= student[0].chem %>
+                </tr>
+                <tr>
+
+                  <td style="border:none;"> <button type="button" class="btn btn-danger btn-lg"
+                      onclick="window.print()">Save Result's Copy</button>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+            <br><br>
+        </div>
+      </div>
+    </div> <br><br>
+    <br><br>
+  </div>

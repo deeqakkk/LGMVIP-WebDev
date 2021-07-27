@@ -1,0 +1,107 @@
+<%- include('partials/navbar') %>
+<div class="tab-content tabs" style="text-align: center;">
+  <div id="add" class="container tab-pane active">
+    <br />
+    <h1 class="sub-heading">Student's details</h1>
+    <br><br>
+    <form action="/updateResult/<%= student[0]._id %>" method="POST">
+      <tr>
+        <td>
+          <label for="name" class="label">Name :</label>
+          <input class="input-box" type="text" name="name" placeholder="Student Name" value="<%=student[0].name %>" />
+        </td>
+        <label for="name" class="label">Class:</label>
+
+        <td>
+          <input class="input-box" type="text" name="class" placeholder="Enter Class" value="<%=student[0].class %>" />
+        </td>
+      </tr>
+
+
+      <br>
+      <tr>
+        <label for="name" class="label">Roll No:</label>
+        <td>
+          <input class="input-box" type="text" name="rollNo" placeholder="Roll Number"
+            value="<%=student[0].rollNo %>" />
+        </td>
+
+        <label for="name" class="label">Contact</label>
+        <td>
+          <input class="input-box" type="text" name="mobileNo" placeholder="Contact Number"
+            value="<%=student[0].mobileNo %>" />
+        </td>
+      </tr>
+
+
+      <br>
+      <tr>
+        <label for="name" class="label" style="margin-left: 5.5rem;">DOB :</label>
+        <td>
+          <input class="input-box" type="date" name="dob" placeholder="DD-MM-YYYY" value="<%=student[0].dob %>" />
+        </td>
+        <label for="name" class="label">Father's Name :</label>
+        <td>
+          <input class="input-box" type="text" name="fatherName" placeholder="Father's Name"
+            value="<%=student[0].fatherName %>" />
+        </td>
+
+      </tr>
+
+      <tr>
+      <tr>
+      </tr>
+
+      </tr>
+
+      <tr align="center">
+        <h3 class="sub-heading" style="color:#000; margin-top:2rem;">Marks details</h3><br><br>
+      </tr>
+      <tr>
+        <label for="name" class="label">Physics</label>
+        <td>
+          <input class="input-box" type="number" name="phy" placeholder="Marks in Physics:"
+            value="<%=student[0].phy %>" />
+        </td>
+
+
+        <label for="name" class="label">Hindi</label>
+        <td>
+          <input class="input-box" type="number" name="hindi" placeholder="Marks in Hindi"
+            value="<%=student[0].hindi %>" />
+        </td>
+      </tr>
+      <tr>
+        <br />
+        <label for="name" class="label">English</label>
+        <td>
+          <input class="input-box" type="number" name="eng" placeholder="Marks in English:"
+            value="<%=student[0].eng %>" />
+        </td>
+        <label for="name" class="label">Maths</label>
+        <td>
+          <input class="input-box" type="number" name="maths" placeholder="Marks in Maths:"
+            value="<%=student[0].maths %>" />
+        </td>
+        <label for="name" class="label">Chemistry</label>
+        <td>
+          <input class="input-box" type="number" name="chem" placeholder="Marks in Chemistry"
+            value="<%=student[0].chem %>" />
+        </td>
+      </tr>
+      <br />
+
+
+      <tr>
+        <br /><br><br>
+        <td colspan="2">
+          <button class="button button2 btn btn-danger" type="submit" name="Submit"
+            style="position: relative;bottom: 3rem;">
+            Update Records
+          </button>
+        </td>
+        <br /><br />
+      </tr>
+    </form>
+  </div>
+</div>
