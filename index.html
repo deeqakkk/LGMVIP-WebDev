@@ -1,12 +1,637 @@
 <!DOCTYPE html>
-<html lang="en">
+<!-- Task 1 completed by Deepak verma (Github: @deeqakkk) for LGMSoC'21 -->
+<html>
+
 <head>
-    <meta charset="UTF-8">
+    <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Vaatika</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous">
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous">
+    </script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous">
+    </script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Satisfy&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+        integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+        integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Uchen&family=Vollkorn:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.css">
+    <link rel="icon" href="Images/Deepak/favicon.ico">
+    <script src="https://use.fontawesome.com/8afe43daa2.js"></script>
+    <link rel="stylesheet" href="styles.css">
+
 </head>
+
 <body>
-    <a href="TASK-1/index.html">Visit Website</a>
+
+    <nav class="navbar navbar-expand-lg navbar-light ">
+        <a class="navbar-brand" href="header-section">Vaatika</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText"
+            aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarText">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="#welcome">HOME</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#projects">BOOKING</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#pricing">PRICING</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#team">VISITORS</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#blogs">BLOG</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#Contact">CONTACT</a>
+                </li>
+            </ul>
+
+        </div>
+    </nav>
+    <div id="header-section" class="container-fluid header-carousel">
+        <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel" data-interval="5000">
+            <ol class="carousel-indicators">
+                <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
+            </ol>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img class="d-block w-100" src="Images/image1.jpg" alt="First slide">
+                </div>
+                <div class="carousel-item">
+                    <img class="d-block w-100" src="Images/image2.jpg" alt="Second slide">
+                </div>
+                <div class="carousel-item">
+                    <img class="d-block w-100" src="Images/image3.jpg" alt="Third slide">
+                </div>
+                <div class="carousel-item">
+                    <img class="d-block w-100" src="Images/image4.jpg" alt="Third slide">
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <div class="col-10">
+
+        <h1 class="big-heading">Come and stay with us to feel even better than at home</h1>
+        <p class="header-para">Stay once, carry memories forever.</p>
+        <button type="button" class="btn btn-header btn-primary btn-lg">Know More</button>
+        <button type="button" class="btn  btn-header btn-warning btn-lg">Book now</button>
+    </div>
+
+    <div id="welcome" class="welcome-section container-fluid">
+
+        <!-- features of hotel best food afordable price and in the lap of nature -->
+        <h1>Welcome to Vaatika</h1>
+        <div class="container ">
+            <div class="row">
+                <div class="col-sm">
+                    <div class="container-fluid welcome-content">
+                        <p class="welcome-line">So happy to have you in our home and hope you feel like it is your own.
+                            Please use what you need and leave the rest,for it may be helpful to others.</p>
+                    </div>
+                </div>
+                <div class="col-sm img-icon welcome-img">
+                    <img class="img-icon hotel-icon" src="images/hotel.png" alt="hotel icon">
+                </div>
+
+            </div>
+        </div>
+
+
+
+        <div class="row features">
+            <div class="col-sm-4">
+                <div class="card">
+                    <div class="card-body">
+                        <img class="card-img-top img-icon" src="Images/lowcost.png" alt="Card image cap">
+                        <h5 class="card-title">Wallet Friendly</h5>
+                        <p class="card-text">Our prices will not cost you much, but that doesn't mean you will be
+                            deprived of any luxury facitlites. </p>
+                        <a href="#" class="btn btn-warning btn-hover">Book here</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-4">
+                <div class="card">
+                    <div class="card-body">
+                        <img class="card-img-top img-icon" src="Images/bestfood.png" alt="Card image cap">
+                        <h5 class="card-title">Excellent Food and Drink</h5>
+                        <p class="card-text">Anything that you need at anytime, Our chef's are ready to serve you 24*7.
+                        </p>
+                        <a href="#" class="btn btn-warning btn-hover">Visit us</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-4">
+                <div class="card">
+                    <div class="card-body">
+                        <img class="card-img-top img-icon" src="Images/staff.png" alt="Card image cap">
+                        <h5 class="card-title">Cheerful Staff</h5>
+                        <p class="card-text">Our staff makes sure that you everything goes perfect with you while you
+                            are here with us.</p>
+                        <a href="#" class="btn btn-warning btn-hover">Know more</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <div id="projects" class="container-fluid">
+
+        <!-- Hotels book for marriage birthday parties meetings festival seasons -->
+        <h1 class="project-title">Book Us for..</h1>
+        <div class="row">
+            <div class="col-sm-3">
+                <div class="card">
+                    <div class="card-body">
+                        <img class="card-img-top img-icon" src="Images/couple.png" alt="Card image cap">
+                        <h5 class="card-title">Wedding Ceremony</h5>
+                        <div class="half-part">
+                            <p class="card-text">Make your moments even more specials with our customized decoration for
+                                you.
+                            </p>
+                            <a href="#" class="btn btn-warning btn-hover">Know More</a>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-3">
+                <div class="card">
+                    <div class="card-body">
+                        <img class="card-img-top img-icon" src="Images/cake.png" alt="Card image cap">
+                        <h5 class="card-title">Birthday Party</h5>
+                        <div class="half-part">
+                            <p class="card-text">Enjoy your day with your friends and family and leave thereafter things
+                                on us.</p>
+                            <a href="#" class="btn btn-warning btn-hover">Book Here</a>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-3">
+                <div class="card">
+                    <div class="card-body">
+                        <img class="card-img-top img-icon" src="Images/peace.png" alt="Card image cap">
+                        <h5 class="card-title">Peace</h5>
+                        <div class="half-part">
+                            <p class="card-text">Our specially designed areas that include mainly plants and all are
+                                some best healers.
+                            </p>
+                            <a href="#" class="btn btn-warning btn-hover">Click here
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-3">
+                <div class="card">
+                    <div class="card-body">
+                        <img class="card-img-top img-icon" src="Images/holiday.png" alt="Card image cap">
+                        <h5 class="card-title">Holidays</h5>
+                        <div class="half-part">
+                            <p class="card-text">With supporting text below as a natural lead-in to additional content.
+                            </p>
+                            <a href="#" class="btn btn-warning btn-hover">Booking available</a>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <section id="pricing" class="py-5 bg-primary">
+        <h1>Special Subscrptions</h1>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4">
+                    <div class="card bg-success mb-5 mb-lg-0 rounded-lg shadow">
+                        <div class="card-header">
+                            <h5 class="card-title text-white-50 text-uppercase text-center">Free</h5>
+                            <h6 class="h1 text-white text-center">₹99<span class="h6 text-white-50">/month</span></h6>
+                        </div>
+                        <div class="card-body bg-light rounded-bottom">
+                            <ul class="list-unstyled mb-4">
+                                <li class="mb-3"><span class="mr-3"><i class="text-success"></i></span>Walk In and Get a
+                                    Room.</li>
+                                <li class="mb-3"><span class="mr-3"><i class="text-success"></i></span>Free Parking.
+                                </li>
+                                <li class="mb-3"><span class="mr-3"><i class="text-success"></i></span>Free Wifi for
+                                    first 24 hours</li>
+                                <li class="mb-3"><span class="mr-3"><i class="text-success"></i></span>Free Gym Pass for
+                                    a day
+                                </li>
+
+                            </ul>
+                            <a href="#" class="btn btn-block btn-hover btn-primary text-uppercase rounded-lg py-3">Buy
+                                now</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="card bg-info mb-5 mb-lg-0 rounded-lg shadow">
+                        <div class="card-header">
+                            <h5 class="card-title text-white-50 text-uppercase text-center">Plus</h5>
+                            <h6 class="h1 text-white text-center">₹999<span class="h6 text-white-50">/month</span></h6>
+                        </div>
+                        <div class="card-body bg-light rounded-bottom">
+                            <ul class="list-unstyled mb-4">
+                                <li class="mb-3"><span class="mr-3"><i class=" text-warning"></i></span><strong> A
+                                        Reserved Room</strong></li>
+                                <li class="mb-3"><span class="mr-3"><i class=" text-warning"></i></span>Free Meals for 7
+                                    days </li>
+                                <li class="mb-3"><span class="mr-3"><i class=" text-warning"></i></span>Gym Pass 7 days
+                                </li>
+                                <li class="mb-3"><span class="mr-3"><i class=" text-warning"></i></span> Free Wifi for 7
+                                    days </li>
+
+                            </ul>
+                            <a href="#" class="btn btn-block btn-hover btn-primary text-uppercase rounded-lg py-3">Buy
+                                now</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="card bg-success mb-5 mb-lg-0 rounded-lg shadow">
+                        <div class="card-header">
+                            <h5 class="card-title text-white-50 text-uppercase text-center">Pro</h5>
+                            <h6 class="h1 text-white text-center">₹9999<span class="h6 text-white-50">/month</span></h6>
+                        </div>
+                        <div class="card-body bg-light rounded-bottom">
+                            <ul class="list-unstyled mb-4">
+                                <li class="mb-3"><span class="mr-3"><i class="text-danger"></i></span><strong>Free Meals
+                                        for a month</strong></li>
+                                <li class="mb-3"><span class="mr-3"><i class="text-danger"></i></span>Access to Private
+                                    pools </li>
+                                <li class="mb-3"><span class="mr-3"><i class="text-danger"></i></span>Vallet Parking
+                                </li>
+                                <li class="mb-3"><span class="mr-3"><i class="text-danger"></i></span>Subscrption to all
+                                    OTT platforms</li>
+                                </li>
+
+                            </ul>
+                            <a href="#" class="btn btn-block btn-hover btn-primary text-uppercase rounded-lg py-3">Buy
+                                now</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="video-projects">
+        <h1 class="video-title">Room Tours</h1>
+        <div class="wrapper">
+            <div class="carousell">
+                <div>
+                    <video id='video' controls="controls" preload='none' poster="Images/image11.jpg">
+                        <source id='mp4' src="https://www.youtube.com/watch?v=q-qY2lAr8ZI" type='video/mp4' />
+                        <h5 style="float: left;">lore34</h5>
+                </div>
+                <div>
+                    <video id='video' controls="controls" preload='none' poster="Images/image22.jpg">
+                        <source id='mp4' src="https://www.youtube.com/watch?v=XKa7Sd-Y820" type='video/mp4' />
+                        <h6 style="float: left;">lore34</h6>
+                </div>
+                <div>
+                    <video id='video' controls="controls" preload='none' poster="Images/image33.jpg">
+                        <source id='mp4' src="https://www.youtube.com/watch?v=d8yQFNooiew" type='video/mp4' />
+                        <h6 style="float: left;">lore34</h6>
+                </div>
+                <div>
+                    <video id='video' controls="controls" preload='none' poster="Images/image44.jpg">
+                        <source id='mp4' src="https://www.youtube.com/watch?v=d8yQFNooiew" type='video/mp4' />
+                        <h6 style="float: left;">lore34</h6>
+                </div>
+                <div>
+                    <video id='video' controls="controls" preload='none' poster="Images/image55.jpg">
+                        <source id='mp4' src="https://www.youtube.com/watch?v=d8yQFNooiew" type='video/mp4' />
+                        <h6 style="float: left;">lore34</h6>
+                </div>
+                <div>
+                    <video id='video' controls="controls" preload='none' poster="Images/image66.jpg">
+                        <source id='mp4' src="https://www.youtube.com/watch?v=q-qY2lAr8ZI" type='video/mp4' />
+                        <h6 style="float: left;">lore34</h6>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+
+    <section id="team">
+        <h1>Special Guests</h1>
+        <!-- This section will include all the famous persons like me that stayed there -->
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 col-sm-6">
+                    <div class="our-team">
+                        <div class="pic">
+                            <img src="https://opt.toiimg.com/recuperator/img/toi/m-69257289/69257289.jpg"
+                                alt="team member">
+                            <div class="visitors">
+                                <h4 class="title">Rohit Sharma</h4>
+
+                            </div>
+
+                        </div>
+                        <div class="content">
+
+                            <ul class="social">
+                                <li><a href="#" class="fa fa-facebook"></a></li>
+                                <li><a href="#" class="fa fa-twitter"></a></li>
+                                <li><a href="#" class="fa fa-linkedin"></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4 col-sm-6">
+                    <div class="our-team ">
+                        <div class="pic">
+                            <img src="Images/arijit.jpg" alt="team member">
+                            <div class="visitors">
+                                <h4 class="title">Arjit Singh</h4>
+
+                            </div>
+
+                        </div>
+                        <div class="content">
+
+                            <ul class="social">
+                                <li><a href="#" class="fa fa-facebook"></a></li>
+                                <li><a href="#" class="fa fa-twitter"></a></li>
+                                <li><a href="#" class="fa fa-linkedin"></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6">
+                    <div class="our-team">
+                        <div class="pic">
+                            <img src="Images/amit.jpg" alt="team member">
+                            <div class="visitors">
+                                <h4 class="title">Amit Shah</h4>
+
+                            </div>
+
+                        </div>
+                        <div class="content">
+
+                            <ul class="social">
+                                <li><a href="#" class="fa fa-facebook"></a></li>
+                                <li><a href="#" class="fa fa-twitter"></a></li>
+                                <li><a href="#" class="fa fa-linkedin"></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <br>
+
+                <div class="col-md-4 col-sm-6">
+                    <div class="our-team">
+                        <div class="pic">
+                            <img src="Images/aman.jpeg" alt="team member">
+                            <div class="visitors">
+                                <h4 class="title">Aman Kesarwani</h4>
+
+                            </div>
+
+                        </div>
+                        <div class="content">
+
+                            <ul class="social">
+                                <li><a href="#" class="fa fa-facebook"></a></li>
+                                <li><a href="#" class="fa fa-twitter"></a></li>
+                                <li><a href="#" class="fa fa-linkedin"></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4 col-sm-6">
+                    <div class="our-team ">
+                        <div class="pic">
+                            <img src="Images/kartik.jpeg" alt="team member" class="img-responsive">
+                            <div class="visitors">
+                                <h4 class="title">Kartik Aryan</h4>
+
+                            </div>
+                        </div>
+                        <div class="content">
+
+                            <ul class="social">
+                                <li><a href="#" class="fa fa-facebook"></a></li>
+                                <li><a href="#" class="fa fa-twitter"></a></li>
+                                <li><a href="#" class="fa fa-linkedin"></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6">
+                    <div class="our-team">
+                        <div class="pic">
+                            <img src="Images/Gaurav-Taneja.jpg" alt="team member">
+                            <div class="visitors">
+                                <h4 class="title">Gourav Tangeja</h4>
+
+                            </div>
+                        </div>
+                        <div class="content">
+
+                            <ul class="social">
+                                <li><a href="#" class="fa fa-facebook"></a></li>
+                                <li><a href="#" class="fa fa-twitter"></a></li>
+                                <li><a href="#" class="fa fa-linkedin"></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <div id="life">
+        <h1 class="project-title"> Expierences at Vaatika</h1>
+        <div class="sld-wrp">
+
+            <div class="slider-for">
+                <div class="slide-container"><img src="images/imagea.jpg"></div>
+                <div class="slide-container"><img src="images/imageb.jpg"></div>
+                <div class="slide-container"><img src="images/imagec.jpg"></div>
+                <div class="slide-container"><img src="images/imaged.jpg"></div>
+                <div class="slide-container"><img src="images/imagee.jpg"></div>
+                <div class="slide-container"><img src="images/imagef.jpg"></div>
+            </div>
+            <div class="slider-nav">
+                <img class="slide-btn" src="images/imagea.jpg">
+                <img class="slide-btn" src="images/imageb.jpg">
+                <img class="slide-btn" src="images/imagec.jpg">
+                <img class="slide-btn" src="images/imaged.jpg">
+                <img class="slide-btn" src="images/imagee.jpg">
+                <img class="slide-btn" src="images/imagef.jpg">
+            </div>
+
+        </div>
+
+    </div>
+    <div id="sign-up">
+        <h1 class="sign-title">Offer Updates</h1>
+
+        <div class="input-group mb-lg-0">
+            <input type="text" cols="50" class="form-control mb-6 col-6"
+                placeholder="Updates about our latest offers, disounts on family trip, discounts on foregin trip, discounts for  married couples.">
+            <div class="input-group-append">
+                <button class="btn btn-danger btn-lg" type="button">Sign Up</button>
+            </div>
+        </div>
+    </div>
+
+    <div id="blogs">
+        <h1>Blogs</h1>
+        <div class="row">
+            <div class="col-sm-4">
+                <div class="card">
+                    <div class="card-body">
+                        <img class="card-img-top img-icon" src="Images/rank.png" alt="Card image cap">
+                        <h5 class="card-title">Top 3 in India</h5>
+                        <p class="card-text">We ranked at No 1 hotels all over India and from last we are competing in
+                            top 3. Thank you all. </p>
+                        <a href="#" class="btn btn-hover btn-warning">Read More</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-4">
+                <div class="card">
+                    <div class="card-body">
+                        <img class="card-img-top img-icon" src="Images/best.png" alt="Card image cap">
+                        <h5 class="card-title">Best Customer Services</h5>
+                        <p class="card-text">"Guests are God", This is our inspiration. We are rewarded with many
+                            affilations in this.</p>
+                        <a href="#" class="btn btn-hover btn-warning">Explore More</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-4">
+                <div class="card">
+                    <div class="card-body">
+                        <img class="card-img-top img-icon" src="Images/city.png" alt="Card image cap">
+                        <h5 class="card-title">Susatainable Development</h5>
+                        <p class="card-text">We have surely developing each day of each year but that doesn't mean we
+                            are harming our nature.</p>
+                        <a href="#" class="btn btn-hover btn-warning">Know More</a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <hr>
+    <div id="Contact">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm padding-remover">
+                    <img src="images/map.jpg" class="map" alt="map-image">
+                </div>
+
+                <div class="col-sm   contact-form">
+                    <form>
+                        <h1 class="video-title">Contact</h1>
+                        <div class="form-group">
+
+                            <label for="exampleInputEmail1">NAME</label>
+                            <input type="text" class="form-control">
+                        </div>
+                        <div class="form-group">
+
+                            <label for="exampleInputEmail1">Email address</label>
+                            <input type="email" class="form-control" placeholder="Enter email">
+                            <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone
+                                else.</small>
+                        </div>
+                        <div class="form-group">
+
+                            <label for="exampleInputEmail1">SUBJECT</label>
+                            <input type="text" class="form-control">
+                        </div>
+                        <div class="form-group">
+
+                            <label for="exampleInputEmail1">MESSAGE</label>
+                            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary btn-group-lg">Submit</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="footer-col col-6">
+                    <h4>Address</h4>
+                    <ul>
+                        <li><a href="#">We have multiple branches all over India. Visit our address section to get address</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Go to</h4>
+                    <ul>
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">About</a></li>
+                        <li><a href="#pricing">Pricing</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                    </ul>
+                </div>
+
+
+                <div class="footer-col">
+                    <h4>follow us</h4>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-google"></i></a>
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+    <script src="index.js"></script>
 </body>
+
 </html>
